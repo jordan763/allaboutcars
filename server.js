@@ -19,7 +19,18 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/users");
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/users',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  },
+  console.log("connected to database")
+);
+
+app.use("/users", require("./routes/userRouter"));
 
 // Start the API server
 app.listen(PORT, function() {
