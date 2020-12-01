@@ -6,8 +6,8 @@ const cors = require("cors");
 require("dotenv").config();
 const PORT = process.env.PORT || 3001;
 
-
 app.use(cors());
+
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -19,15 +19,14 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-const MONGODB_URI = process.env.MONGOATLAS_URI || 'mongodb://localhost/users'
-mongoose.connect(MONGODB_URI,
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/users',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false
-  },
-  console.log("connected to database")
+  }
 );
 
 app.use("/users", require("./routes/userRouter"));
