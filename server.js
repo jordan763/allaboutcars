@@ -25,7 +25,7 @@ app.use(routes);
 
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/users' || "mongodb+srv://SXYuqOyCEnDy5zmi:<password>@cluster0.rvpae.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  process.env.MONGODB_URI || 'mongodb://localhost/users' || "mongodb+srv://SXYuqOyCEnDy5zmi:jordanvang@cluster0.rvpae.mongodb.net/users?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
