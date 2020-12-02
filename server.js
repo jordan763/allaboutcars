@@ -1,4 +1,5 @@
 const express = require("express");
+const bodyParser = require('body-parser');
 const mongoose = require("mongoose");
 const routes = require("./routes/userRouter");
 const app = express();
@@ -6,6 +7,7 @@ const cors = require("cors");
 require("dotenv").config();
 const PORT = process.env.PORT || 3001;
 
+app.use(bodyParser.json());
 app.use(cors());
 
 // Define middleware here
@@ -19,8 +21,11 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
+
+
+
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/users',
+  process.env.MONGODB_URI || 'mongodb://localhost/users' || "mongodb+srv://SXYuqOyCEnDy5zmi:<password>@cluster0.rvpae.mongodb.net/<dbname>?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
