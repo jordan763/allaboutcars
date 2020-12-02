@@ -19,8 +19,8 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-const MONGODB_URI = process.env.MONGOATALS_URI || 'mongodb://localhost/users';
-mongoose.connect(MONGODB_URI,
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/users',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -28,6 +28,7 @@ mongoose.connect(MONGODB_URI,
     useFindAndModify: false
   }
 );
+
 
 app.use("/users", require("./routes/userRouter"));
 
