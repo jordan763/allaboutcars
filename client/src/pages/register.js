@@ -4,6 +4,7 @@ import UserContext from "../content/userContent";
 import Axios from "axios";
 import ErrorNotice from "./ErrorNotice";
 
+
 export default function Register() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
@@ -68,7 +69,7 @@ export default function Register() {
           onChange={(e) => setDisplayName(e.target.value)}
         />
 
-        <input type="submit" value="Register" />
+        <input className="button" type="submit" value="Register" />
       </form>
     </div>
   );

@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import Login from "./pages/login";
 import Register from "./pages/register";
 import UserContent from "./content/userContent";
+import "./style.css";
 
 export default function App() {
   const [userData, setUserData] = useState({

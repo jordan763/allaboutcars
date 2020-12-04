@@ -24,7 +24,7 @@ export default function AuthOptions() {
       ) : (
         <>
           <button onClick={register}>Register</button>
-          <button onClick={login}>Log in</button>
+          <button onClick={login}>Login</button>
         </>
       )}
     </nav>

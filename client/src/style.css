@@ -1,0 +1,44 @@
+
+
+.page {
+text-align: center;
+}
+
+.form {
+    padding: auto;
+       
+}
+
+.form input{
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+
+.button{
+    padding: 0.3rem 0.5rem;
+    border-radius: 8px;
+    background-color:lightblue;
+    font-size: 1.1rem;
+}
+
+
+
+/* navBar */
+.header {
+    
+}
+
+.title {
+    
+}
+
+
+.auth-options {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+}

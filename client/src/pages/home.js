@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 import UserContext from "../content/userContent";
+
 
 export default function Home() {
   const { userData } = useContext(UserContext);
@@ -11,8 +11,11 @@ export default function Home() {
         <h1>Welcome {userData.user.displayName}</h1>
       ) : (
         <>
-          <h2>You are not logged in</h2>
-          <Link to="/login">Log in</Link>
+          <h2>
+          <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTuBH6VsFepjszgDInG2ZtEAeBb-ybJLBpXQ&usqp=CAU"
+        />
+          </h2>
         </>
       )}
     </div>

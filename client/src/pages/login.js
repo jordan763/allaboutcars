@@ -4,6 +4,7 @@ import UserContext from "../content/userContent";
 import Axios from "axios";
 import ErrorNotice from "./ErrorNotice";
 
+
 export default function Login() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
@@ -37,7 +38,7 @@ export default function Login() {
         <ErrorNotice message={error} clearError={() => setError(undefined)} />
       )}
       <form className="form" onSubmit={submit}>
-        <label htmlFor="login-email">Email</label>
+        <label className="userInput" htmlFor="login-email">Email</label>
         <input
           id="login-email"
           type="email"
@@ -51,7 +52,7 @@ export default function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <input type="submit" value="Log in" />
+        <input className="button" type="submit" value="Login" />
       </form>
     </div>
   );
