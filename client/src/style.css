@@ -43,3 +43,24 @@ button {
 }
 
 /* narBar */
+
+/* ErrorNotice */
+
+.error-notice {
+  background-color:#ff000080;
+  width: 300px;
+  text-align: center;
+  padding: .5%;
+  border-radius: 8px;
+  align-items: center;
+  margin: auto;
+}
+
+.x {
+  background-color: red;
+  padding: auto;
+  position: relative; left: 10px;
+  border-radius: 5px; 
+}
+
+/* ErrorNotice */
