@@ -13,11 +13,11 @@ export default function Home() {
         <>
           <h2>
           <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTuBH6VsFepjszgDInG2ZtEAeBb-ybJLBpXQ&usqp=CAU"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTuBH6VsFepjszgDInG2ZtEAeBb-ybJLBpXQ&usqp=CAU" alt="car"
         />
           <br></br>
 
-          quote quote
+          AllAboutCars App
           </h2>
         </>
       )}

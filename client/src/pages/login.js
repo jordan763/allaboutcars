@@ -56,7 +56,7 @@ export default function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
          <br></br>
-        <input className="btn btn-primary btn-lg active " role="button" aria-pressed="true" type="submit" value="Login" />
+        <input className="btn btn-primary btn-lg active " aria-pressed="true" type="submit" value="Login" />
       </form>
     </div>
   );

@@ -16,21 +16,22 @@ text-align: center;
   justify-self: center;
 }
 
-/* buttons on top right */
+/* navBar */
 button {
   border: none;
   background: none;
   cursor: pointer;
 }
 
-
-/* navBar */
 .header {
     display: flex;
+    background-color:lightsteelblue;
   }
 
 .title {
-    height: auto;
+    font-size: 35px;
+    padding: 5%;
+    color: black;
     
 }
 
@@ -40,3 +41,5 @@ button {
     right: 1em;
     border-radius: 8px;
 }
+
+/* narBar */

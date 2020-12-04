@@ -80,7 +80,7 @@ export default function Register() {
           onChange={(e) => setDisplayName(e.target.value)}
         />
          <br></br>
-        <input class="btn btn-primary btn-lg active " role="button" aria-pressed="true" type="submit" value="Register" />
+        <input class="btn btn-primary btn-lg active " aria-pressed="true" type="submit" value="Register" />
       </form>
     </div>
   );
