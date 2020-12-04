@@ -48,7 +48,7 @@ export default function Login() {
 
         <br></br>
 
-        <label htmlFor="login-password">Password</label>
+        <label>Password</label>
         <br></br>
         <input
           id="login-password"

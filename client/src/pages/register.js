@@ -53,7 +53,7 @@ export default function Register() {
 
         <br></br>
 
-        <label htmlFor="register-password">Password</label>
+        <label>Password</label>
         <br></br>
         <input
           id="register-password"
@@ -63,7 +63,7 @@ export default function Register() {
 
         <br></br>
 
-        <label htmlFor="register-password">Confirm Password</label>
+        <label>Confirm Password</label>
         <br></br>
         <input
           type="password"
@@ -72,7 +72,7 @@ export default function Register() {
 
         <br></br>
 
-        <label htmlFor="register-display-name">Display Name</label>
+        <label>Display Name</label>
         <br></br>
         <input
           id="register-display-name"
