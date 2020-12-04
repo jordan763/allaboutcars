@@ -8,6 +8,7 @@ export default function navBar() {
     <header className="header">
       <Link to="/">
         <h1 className="title">Home</h1>
+        
       </Link>
       <AuthOptions />
     </header>

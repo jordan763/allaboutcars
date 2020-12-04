@@ -8,13 +8,16 @@ export default function Home() {
   return (
     <div className="page">
       {userData.user ? (
-        <h1>Welcome {userData.user.displayName}</h1>
+        <h1>Welcome, {userData.user.displayName}</h1>
       ) : (
         <>
           <h2>
           <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTuBH6VsFepjszgDInG2ZtEAeBb-ybJLBpXQ&usqp=CAU"
         />
+          <br></br>
+
+          quote quote
           </h2>
         </>
       )}

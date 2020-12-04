@@ -44,32 +44,43 @@ export default function Register() {
       )}
       <form className="form" onSubmit={submit}>
         <label htmlFor="register-email">Email</label>
+        <br></br>
         <input
           id="register-email"
           type="email"
           onChange={(e) => setEmail(e.target.value)}
         />
 
+        <br></br>
+
         <label htmlFor="register-password">Password</label>
+        <br></br>
         <input
           id="register-password"
           type="password"
           onChange={(e) => setPassword(e.target.value)}
         />
+
+        <br></br>
+
+        <label htmlFor="register-password">Confirm Password</label>
+        <br></br>
         <input
           type="password"
-          placeholder="Verify password"
           onChange={(e) => setPasswordCheck(e.target.value)}
         />
 
-        <label htmlFor="register-display-name">Display name</label>
+        <br></br>
+
+        <label htmlFor="register-display-name">Display Name</label>
+        <br></br>
         <input
           id="register-display-name"
           type="text"
           onChange={(e) => setDisplayName(e.target.value)}
         />
-
-        <input className="button" type="submit" value="Register" />
+         <br></br>
+        <input class="btn btn-primary btn-lg active " role="button" aria-pressed="true" type="submit" value="Register" />
       </form>
     </div>
   );

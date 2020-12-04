@@ -33,26 +33,30 @@ export default function Login() {
   };
   return (
     <div className="page">
-      <h2>Log in</h2>
+      <h2>Login</h2>
       {error && (
         <ErrorNotice message={error} clearError={() => setError(undefined)} />
       )}
       <form className="form" onSubmit={submit}>
         <label className="userInput" htmlFor="login-email">Email</label>
+        <br></br>
         <input
           id="login-email"
           type="email"
           onChange={(e) => setEmail(e.target.value)}
         />
 
+        <br></br>
+
         <label htmlFor="login-password">Password</label>
+        <br></br>
         <input
           id="login-password"
           type="password"
           onChange={(e) => setPassword(e.target.value)}
         />
-
-        <input className="button" type="submit" value="Login" />
+         <br></br>
+        <input className="btn btn-primary btn-lg active " role="button" aria-pressed="true" type="submit" value="Login" />
       </form>
     </div>
   );
