@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
-import UserContent from "../../content/userContent";
+import UserContext from "../../content/userContext";
 
 export default function AuthOptions() {
-  const { userData, setUserData } = useContext(UserContent);
+  const { userData, setUserData } = useContext(UserContext);
 
   const history = useHistory();
 
@@ -20,11 +20,11 @@ export default function AuthOptions() {
   return (
     <nav className="auth-options">
       {userData.user ? (
-         <button className="button" onClick={logout}>Log out</button>
+        <button onClick={logout}>Log out</button>
       ) : (
         <>
-          <button className="button" onClick={register}>Register</button>
-          <button className="button" onClick={login}>Login</button>
+          <button onClick={register}>Register</button>
+          <button onClick={login}>Log in</button>
         </>
       )}
     </nav>

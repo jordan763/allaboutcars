@@ -1,9 +1,8 @@
 import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
-import UserContext from "../content/userContent";
-import Axios from "axios";
+import UserContext from "../content/userContext";
+import axios from "axios";
 import ErrorNotice from "./ErrorNotice";
-
 
 export default function Register() {
   const [email, setEmail] = useState();
@@ -20,8 +19,12 @@ export default function Register() {
 
     try {
       const newUser = { email, password, passwordCheck, displayName };
-      await Axios.post("/register", newUser);
-      const loginRes = await Axios.post("/login", {
+      await axios.post("http://localhost:3001/users/register", newUser).then(res => {
+        let user = res.data;
+        console.log(user);
+      });
+      
+      const loginRes = await axios.post("http://localhost:3001/users/login", {
         email,
         password,
       });
@@ -43,44 +46,33 @@ export default function Register() {
         <ErrorNotice message={error} clearError={() => setError(undefined)} />
       )}
       <form className="form" onSubmit={submit}>
-        <label>Email</label>
-        <br></br>
+        <label htmlFor="register-email">Email</label>
         <input
           id="register-email"
           type="email"
           onChange={(e) => setEmail(e.target.value)}
         />
 
-        <br></br>
-
-        <label>Password</label>
-        <br></br>
+        <label htmlFor="register-password">Password</label>
         <input
           id="register-password"
           type="password"
           onChange={(e) => setPassword(e.target.value)}
         />
-
-        <br></br>
-
-        <label>Confirm Password</label>
-        <br></br>
         <input
           type="password"
+          placeholder="Verify password"
           onChange={(e) => setPasswordCheck(e.target.value)}
         />
 
-        <br></br>
-
-        <label>Display Name</label>
-        <br></br>
+        <label htmlFor="register-display-name">Display name</label>
         <input
           id="register-display-name"
           type="text"
           onChange={(e) => setDisplayName(e.target.value)}
         />
-         <br></br>
-        <input class="btn btn-primary btn-lg active " aria-pressed="true" type="submit" value="Register" />
+
+        <input type="submit" value="Register" />
       </form>
     </div>
   );

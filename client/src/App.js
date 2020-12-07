@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Axios from "axios";
-import Header from "./pages/navBar";
+import Navbar from "./components/Navbar/"
 import Home from "./pages/home";
 import Login from "./pages/login";
 import Register from "./pages/register";
-import UserContent from "./content/userContent";
-import "./style.css";
+import { UserProvider } from "./content/userContext";
+import Search from "./pages/Search";
+import Saved from "./pages/Saved";
+import NoMatch from "./pages/NoMatch";
+import "./App.css";
 
 export default function App() {
   const [userData, setUserData] = useState({
@@ -22,12 +25,12 @@ export default function App() {
         token = "";
       }
       const tokenRes = await Axios.post(
-        "/users/tokenIsValid",
+        "http://localhost:3001/users/tokenIsValid",
         null,
         { headers: { "x-auth-token": token } }
       );
       if (tokenRes.data) {
-        const userRes = await Axios.get("/users/", {
+        const userRes = await Axios.get("http://localhost:3001/users/", {
           headers: { "x-auth-token": token },
         });
         setUserData({
@@ -43,16 +46,27 @@ export default function App() {
   return (
     <>
       <BrowserRouter>
-        <UserContent.Provider value={{ userData, setUserData }}>
-          <Header />
-          <div className="container">
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/login" component={Login} />
-              <Route path="/register" component={Register} />
-            </Switch>
-          </div>
-        </UserContent.Provider>
+        <UserProvider value={{ userData, setUserData }}>
+          <Navbar />
+          <Switch>
+            <Route
+              exact
+              path="/search"
+              render={() => {
+                  return (
+                    userData.user ?
+                    <Route exact path="/search" component={Search} /> :
+                    <Redirect to="/" /> 
+                  )
+              }}
+            />
+            <Route exact path="/" component={Home} />
+            <Route path="/login" component={Login} />
+            <Route path="/register" component={Register} />
+            <Route exact path="/saved" component={Saved} />
+            <Route component={NoMatch} />
+          </Switch>
+        </UserProvider>
       </BrowserRouter>
     </>
   );

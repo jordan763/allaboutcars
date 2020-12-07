@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import UserContext from "../content/userContent";
+import { Link } from "react-router-dom";
+import UserContext from "../content/userContext";
 import Join from '../components/Join/Join';
 import Chat from '../components/Chat/Chat';
 
@@ -11,25 +12,24 @@ export default function Home() {
   return (
     <div className="page">
       {userData.user ? (
-        <h1>Welcome, {userData.user.displayName}</h1>,
-        <Router>
+        <div className="text-center mt-5">
+          <h1>Welcome {userData.user.displayName}</h1>
+          <div className="mt-5">
+            <Link to="/search">Search</Link>
+          </div>
+          <Router>
         <Route path="/" exact component={Join} />
         <Route path="/chat" component={Chat} />
         </Router>
-                
+        </div>
       ) : (
         <>
-          <h2>
-          <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTuBH6VsFepjszgDInG2ZtEAeBb-ybJLBpXQ&usqp=CAU" alt="car"
-        />
-          <br></br>
-
-          AllAboutCars App
-          </h2>
+          <div className="text-center mt-5">
+            <h2>You are not logged in. Please register and login into here.</h2>
+            <Link to="/login">Log in</Link>
+          </div>
         </>
       )}
     </div>
-    
   );
 }

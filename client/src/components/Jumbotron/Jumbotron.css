@@ -1,0 +1,10 @@
+.jumbotron {
+	background: none;
+	padding: 50px 0px 0px 0px;
+	margin: 0;
+}
+
+.display-4 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+}
