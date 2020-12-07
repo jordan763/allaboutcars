@@ -24,7 +24,7 @@ export default function Register() {
         console.log(user);
       });
 
-      const loginRes = await axios.post("/users/login", {
+      const loginRes = await axios.post("/login", {
         email,
         password,
       });
