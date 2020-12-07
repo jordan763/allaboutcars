@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Select from 'react-select';
 import { Col, Row, Container } from "../../components/Grid";
-import { Input, FormBtn } from "../../components/Form";
+import { FormBtn } from "../../components/Form";
 import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import CarCard from "../../components/CarCard";
