@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 import UserContext from "../content/userContent";
+import Join from '../components/Join/Join';
+import Chat from '../components/Chat/Chat';
 
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 export default function Home() {
   const { userData } = useContext(UserContext);
@@ -8,7 +11,12 @@ export default function Home() {
   return (
     <div className="page">
       {userData.user ? (
-        <h1>Welcome, {userData.user.displayName}</h1>
+        <h1>Welcome, {userData.user.displayName}</h1>,
+        <Router>
+        <Route path="/" exact component={Join} />
+        <Route path="/chat" component={Chat} />
+        </Router>
+                
       ) : (
         <>
           <h2>
@@ -22,5 +30,6 @@ export default function Home() {
         </>
       )}
     </div>
+    
   );
 }

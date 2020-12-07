@@ -3,7 +3,7 @@ text-align: center;
 }
 
 .form {
-    padding: auto;
+  padding: auto;
        
 }
 
@@ -21,6 +21,7 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+  
 }
 
 .header {
