@@ -23,6 +23,16 @@
   to { transform: rotate(360deg); }
 }
 
+.btn {
+  background-color: #222;
+  color: antiquewhite;
+}
+
+.page {
+  text-align: center;
+  margin: auto;
+  }
+
 .error-notice {
   background-color:#ff000080;
   width: 300px;
@@ -53,6 +63,6 @@
   padding: 0.1rem;
   border-radius: 8px;
   font-size: 1.1rem;
-  margin-bottom: 2rem;
+  margin: auto;
   justify-self: center;
 }

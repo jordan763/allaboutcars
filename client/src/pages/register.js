@@ -19,12 +19,12 @@ export default function Register() {
 
     try {
       const newUser = { email, password, passwordCheck, displayName };
-      await axios.post("http://localhost:3001/users/register", newUser).then(res => {
+      await axios.post("/users/register", newUser).then(res => {
         let user = res.data;
         console.log(user);
       });
-      
-      const loginRes = await axios.post("http://localhost:3001/users/login", {
+
+      const loginRes = await axios.post("/users/login", {
         email,
         password,
       });
@@ -41,38 +41,44 @@ export default function Register() {
 
   return (
     <div className="page">
-      <h2>Register</h2>
+      <h2>Sign Up</h2>
       {error && (
         <ErrorNotice message={error} clearError={() => setError(undefined)} />
       )}
+      <br></br>
       <form className="form" onSubmit={submit}>
         <label htmlFor="register-email">Email</label>
+        <br></br>
         <input
           id="register-email"
           type="email"
           onChange={(e) => setEmail(e.target.value)}
         />
-
-        <label htmlFor="register-password">Password</label>
+        <br></br>
+        <label>Password</label>
+        <br></br>
         <input
           id="register-password"
           type="password"
           onChange={(e) => setPassword(e.target.value)}
         />
+        <br></br>
         <input
           type="password"
           placeholder="Verify password"
           onChange={(e) => setPasswordCheck(e.target.value)}
         />
-
-        <label htmlFor="register-display-name">Display name</label>
+        <br></br>
+        <label>Display name</label>
+        <br></br>
         <input
           id="register-display-name"
           type="text"
           onChange={(e) => setDisplayName(e.target.value)}
         />
-
-        <input type="submit" value="Register" />
+        <br></br>
+        <br></br>
+        <input class="btn" type="submit" value="Register" />
       </form>
     </div>
   );

@@ -17,7 +17,7 @@ export default function Login() {
     try {
       const loginUser = { email, password };
       const loginRes = await Axios.post(
-        "http://localhost:3001/users/login",
+        "/users/login",
         loginUser
       );
       setUserData({
@@ -32,26 +32,29 @@ export default function Login() {
   };
   return (
     <div className="page">
-      <h2>Log in</h2>
+      <h2>Login</h2>
       {error && (
         <ErrorNotice message={error} clearError={() => setError(undefined)} />
       )}
       <form className="form" onSubmit={submit}>
-        <label htmlFor="login-email">Email</label>
+        <label>Email</label>
+        <br></br>
         <input
           id="login-email"
           type="email"
           onChange={(e) => setEmail(e.target.value)}
         />
-
-        <label htmlFor="login-password">Password</label>
+        <br></br>
+        <label>Password</label>
+        <br></br>
         <input
           id="login-password"
           type="password"
           onChange={(e) => setPassword(e.target.value)}
         />
-
-        <input type="submit" value="Log in" />
+        <br></br>
+        <br></br>
+        <input class="btn" type="submit" value="Login" />
       </form>
     </div>
   );
