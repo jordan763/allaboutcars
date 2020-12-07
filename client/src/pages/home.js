@@ -17,8 +17,8 @@ export default function Home() {
       ) : (
         <>
           <div className="text-center mt-5">
-            <h2>You are not logged in. Please register and login into here.</h2>
-            <Link to="/login">Log in</Link>
+            <h2>You are not logged in. Please register or login.</h2>
+            <Link to="/login">Login</Link>
           </div>
         </>
       )}
