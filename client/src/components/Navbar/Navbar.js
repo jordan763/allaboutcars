@@ -54,6 +54,12 @@ const Navbar = (props) => {
             }>
               <Link to="/register" className="nav-link">Sign up</Link>
             </li>
+            <li className={window.location.pathname === "/chat"
+              ? "nav-item active"
+              : "nav-item"
+            }>
+              <Link to= {{ pathname: "https://allaboutcars-d0f4f.web.app/" }} target="_blank" className="nav-link">Chat</Link>
+            </li>
           </ul>
         )
       }
