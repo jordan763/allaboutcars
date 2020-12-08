@@ -29,7 +29,7 @@ morganBody(app, {
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/carscrape',
+  process.env.MONGODB_URI || 'mongodb://localhost/allaboutcars',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
