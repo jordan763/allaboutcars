@@ -371,11 +371,11 @@ export const models = {
 
 
 export const cities = [
-    {label: 'Chicago,IL', value: 'Chicago-IL'},
-    {label: 'Denver,CO', value: 'Denver-CO'},
-    {label: 'Madison,WI', value: 'Madison-WI'},
-    {label: 'Minneapolis,MN', value: 'Minneapolis-MN'},
-    {label: 'Washington,DC', value: 'Washington-DC'},
+    {label: 'Chicago, IL', value: 'Chicago-IL'},
+    {label: 'Denver, CO', value: 'Denver-CO'},
+    {label: 'Madison, WI', value: 'Madison-WI'},
+    {label: 'Minneapolis, MN', value: 'Minneapolis-MN'},
+    {label: 'Washington, DC', value: 'Washington-DC'},
 
 ];
 export const miles = [
