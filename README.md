@@ -30,7 +30,7 @@
 
 # Github_Account
 
-*https://github.com/jordan763/allaboutcars,
+*https://github.com/jordan763,
 https://github.com/TJblue94,
 https://github.com/PrLamkin
 
