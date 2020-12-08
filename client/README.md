@@ -20,7 +20,7 @@
 *Copy the code from github [https://github.com/jordan763/allaboutcars]. Once you have on your computer, run "npm install" in your termial. After all the node_modules have downloaded, you are ready the run "npm start". Give a second to start-up and the app will pop-up in your browser. 
 
 # Demo
-
+<img src="https://media.giphy.com/media/Bars0WtajULDi1ZDIT/giphy.gif" alt="app demo">
 
 
 # Contibution
