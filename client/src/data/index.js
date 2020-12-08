@@ -1,436 +1,340 @@
 export const makes = [
     {label: 'Any', value: ''},
-    {label: 'AM General', value: 'AM-General'},
-    {label: 'AMC', value: 'AMC'},
-    {label: 'Acura', value: 'Acura'},
-    {label: 'Alfa Romeo', value: 'Alfa-Romeo'},
     {label: 'Aston Martin', value: 'Aston-Martin'},
     {label: 'Audi', value: 'Audi'},
     {label: 'BMW', value: 'BMW'},
-    {label: 'Bentley', value: 'Bentley'},
     {label: 'Buick', value: 'Buick'},
     {label: 'Cadillac', value: 'Cadillac'},
     {label: 'Chevrolet', value: 'Chevrolet'},
-    {label: 'Chrysler', value: 'Chrysler'},
     {label: 'Dodge', value: 'Dodge'},
-    {label: 'Ferrari', value: 'Ferrari'},
-    {label: 'Fiat', value: 'Fiat'},
-    {label: 'Fisker', value: 'Fisker'},
-    {label: 'Fleetwood', value: 'Fleetwood'},
     {label: 'Ford', value: 'Ford'},
-    {label: 'Freightliner', value: 'Freightliner'},
     {label: 'GMC', value: 'GMC'},
-    {label: 'Genesis', value: 'Genesis'},
-    {label: 'Geo', value: 'Geo'},
     {label: 'Honda', value: 'Honda'},
     {label: 'Hummer', value: 'Hummer'},
-    {label: 'Hyundai', value: 'Hyundai'},
-    {label: 'Infiniti', value: 'Infiniti'},
-    {label: 'International', value: 'International'},
-    {label: 'Isuzu', value: 'Isuzu'},
     {label: 'Jaquar', value: 'Jaquar'},
-    {label: 'Jeep', value: 'Jeep'},
-    {label: 'KIA', value: 'KIA'},
-    {label: 'Karma', value: 'Karma'},
-    {label: 'Lamborghini', value: 'Lamborghini'},
-    {label: 'Land Rover', value: 'Land-Rover'},
     {label: 'Lexus', value: 'Lexus'},
     {label: 'Lincoln', value: 'Lincoln'},
-    {label: 'Lotus', value: 'Lotus'},
-    {label: 'Maserati', value: 'Maserati'},
     {label: 'Mazda', value: 'Mazda'},
-    {label: 'McLaren', value: 'McLaren'},
     {label: 'Mercedes Benz', value: 'Mercedes-Benz'},
-    {label: 'Mercury', value: 'Mercury'},
-    {label: 'Mini', value: 'Mini'},
-    {label: 'Mitsubishi', value: 'Mitsubishi'},
-    {label: 'Mitsubishi Fuso', value: 'Mitsubishi-Fuso'},
-    {label: 'Nissan', value: 'Nissan'},
-    {label: 'Oldsmobile', value: 'Oldsmobile'},
-    {label: 'Panoz', value: 'Panoz'},
-    {label: 'Plymouth', value: 'Plymouth'},
-    {label: 'Pontiac', value: 'Pontiac'},
     {label: 'Porsche', value: 'Porsche'},
-    {label: 'RAM', value: 'RAM'},
-    {label: 'Rolls Royce', value: 'Rolls-Royce'},
-    {label: 'Saab', value: 'Saab'},
-    {label: 'Saturn', value: 'Saturn'},
-    {label: 'Scion', value: 'Scion'},
-    {label: 'Shelby', value: 'Shelby'},
-    {label: 'Smart', value: 'Smart'},
-    {label: 'Sterling', value: 'Sterling'},
-    {label: 'Subaru', value: 'Subaru'},
-    {label: 'Suzuki', value: 'Suzuki'},
     {label: 'Tesla', value: 'Tesla'},
     {label: 'Toyota', value: 'Toyota'},
-    {label: 'Volkswagen', value: 'Volkswagen'},
-    {label: 'Volvo', value: 'Volvo'}
+
 ];
 export const models = {
     "Init": [
         {label: 'Any', value: ''}
     ],
-    "AM-General": [
-        {label: 'Any', value: ''},
-        {label: 'Aerostar', value: 'Aerostar'},
-        {label: 'Think', value: 'Think'},
-        {label: 'Thunderbird', value: 'Thunderbird'},
-        {label: 'Transit', value: 'Transit'},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "AMC": [
-        {label: 'Any', value: ''},
-        {label: 'Aerostar', value: 'Aerostar'},
-        {label: 'Think', value: 'Think'},
-        {label: 'Thunderbird', value: 'Thunderbird'},
-        {label: 'Transit', value: 'Transit'},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Acura": [
-        {label: 'Any', value: ''},
-        {label: 'Aerostar', value: 'Aerostar'},
-        {label: 'Think', value: 'Think'},
-        {label: 'Thunderbird', value: 'Thunderbird'},
-        {label: 'Transit', value: 'Transit'},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Alfa-Romeo": [
-        {label: 'Any', value: ''},
-        {label: 'Aerostar', value: 'Aerostar'},
-        {label: 'Think', value: 'Think'},
-        {label: 'Thunderbird', value: 'Thunderbird'},
-        {label: 'Transit', value: 'Transit'},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
     "Aston-Martin": [
         {label: 'Any', value: ''},
-        {label: 'DB11', value: 'DB11'},
-        {label: 'Rapide', value: 'Think'},
-        {label: 'Vantage', value: 'Vantage'}
+        {label: 'Vantage', value: 'Vantage'},
     ],
     "Audi": [
-        {label: 'Any', value: ''},
-        {label: 'Aerostar', value: 'Aerostar'},
-        {label: 'Think', value: 'Think'},
-        {label: 'Thunderbird', value: 'Thunderbird'},
-        {label: 'Transit', value: 'Transit'},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
+        {label: 'Any', value: 'Any'},
+        {label: 'A3', value: 'A3'},
+        {label: 'A4', value: 'A4'},
+        {label: 'A5', value: 'A5'},
+        {label: 'A6', value: 'A6'},
+        {label: 'A7', value: 'A7'},
+        {label: 'A8', value: 'A8'},
+        {label: 'Allroad', value: 'Allroad'},
+        {label: 'E-tron', value: 'E-tron'},
+        {label: 'Q3', value: 'Q3'},
+        {label: 'Q5', value: 'Q5'},
+        {label: 'Q7', value: 'Q7'},
+        {label: 'Q8', value: 'Q8'},
+        {label: 'R8', value: 'R8'},
+        {label: 'RS_5', value: 'RS_5'},
+        {label: 'RS_7', value: 'RS_7'},
+        {label: 'S3', value: 'S3'},
+        {label: 'S4', value: 'S4'},
+        {label: 'S5', value: 'S5'},
+        {label: 'S6', value: 'S6'},
+        {label: 'S7', value: 'S7'},
+        {label: 'SQ5', value: 'SQ5'},
+        {label: 'TT', value: 'TT'},
+        {label: 'Any', value: 'Any'},
+
     ],
     "BMW": [
         {label: 'Any', value: ''},
-        {label: 'Aerostar', value: 'Aerostar'},
-        {label: 'Think', value: 'Think'},
-        {label: 'Thunderbird', value: 'Thunderbird'},
-        {label: 'Transit', value: 'Transit'},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
+        {label: '1-Series', value: '1-Series'},
+        {label: '2-Series', value:'2-Series'},
+        {label: '3-Series', value: '3-Series'},
+        {label: '4-Series', value: '4-Series'},
+        {label: '4-Series_Gran_Coupe', value: '4-Series_Gran_Coupe'},
+        {label: '5-Series', value: '5-Series'},
+        {label: '6-Series', value: '6-Series'},
+        {label: '7-Series', value: '7-Series'},
+        {label: '750Li_Alpina_B7', value: '750Li_Alpina_B7'},
+        {label: '750Li', value: '750Li'},
+        {label: '8-Series', value: '8-Series'},
+        {label: 'I3', value: 'I3'},
+        {label: 'M2', value: 'M2'},
+        {label: 'M340', value: 'M340'},
+        {label: 'M3', value: 'M3'},
+        {label: 'M4', value: 'M4'},
+        {label: 'M5', value: 'M5'},
+        {label: 'M6', value: 'M6'},
+        {label: 'X1', value: 'X1'},
+        {label: 'X2', value: 'X2'},
+        {label: 'X3', value: 'X3'},
+        {label: 'X4', value: 'X4'},
+        {label: 'X5', value: 'X5'},
+        {label: 'X6', value: 'X6'},
+        {label: 'X7', value: 'X7'},
+        {label: 'Z4', value: 'Z4'},
     ],
-    "Bentley": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Buick": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
+
     "Cadillac": [
         {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
+        {label: 'ATS', value: 'ATS'},
+        {label: 'CT4', value: 'CT4'},
+        {label: 'CT5', value: 'CT5'},
+        {label: 'CT6', value: 'CT6'},
+        {label: 'CTS', value: 'CTS'},
+        {label: 'Deville', value: 'Deville'},
+        {label: 'Escalade_ESV', value: 'Escalade_ESV'},
+        {label: 'Escalade_Hybrid', value: 'Escalade_Hybrid'},
+        {label: 'Escalade', value: 'Escalade'},
+        {label: 'SRX', value: 'SRX'},
+        {label: 'STS', value: 'STS'},
+        {label: 'XT5', value: 'XT5'},
+        {label: 'XT6', value: 'XT6'},
+        {label: 'XTS', value: 'XTS'},
     ],
     "Chevrolet": [
         {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
+        {label: '2500', value: '2500'},
+        {label: '3500', value: '3500'},
+        {label: 'Avalanche', value: 'Avalanche'},
+        {label: 'Aveo', value: 'Aveo'},
+        {label: 'Blazer', value: 'Blazer'},
+        {label: 'Bolt_EV', value: 'Bolt_EV'},
+        {label: 'Camaro', value: 'Camaro'},
+        {label: 'Captiva', value: 'Captiva'},
+        {label: 'Colorado', value: 'Colorado'},
+        {label: 'Corvette', value: 'Corvette'},
+        {label: 'Equinox', value: 'Equinox'},
+        {label: 'Impala', value: 'Impala'},
+        {label: 'Suburban', value: 'Suburban'},
+        {label: 'Tahoe', value: 'Tahoe'},
+        {label: 'Trailblazer', value: 'Trailblazer'},
+        {label: 'Volt', value: 'Volt'},
+
     ],
-    "Chrysler": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
+
     "Dodge": [
         {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
+        {label: 'Avenger', value: 'Avenger'},
+        {label: 'Caliber', value: 'Caliber'},
+        {label: 'Caravan', value: 'Caravan'},
+        {label: 'Challenger', value: 'Challenger'},
+        {label: 'Charger', value: 'Charger'},
+        {label: 'Dakota', value: 'Dakota'},
+        {label: 'Dart', value: 'Dart'},
+        {label: 'Durango', value: 'Durango'},
+        {label: 'Grand_Caravan', value: 'Grand_Caravan'},
+        {label: 'Intrepid', value: 'Intrepid'},
+        {label: 'Journey', value: 'Journey'},
+        {label: 'Neon', value: 'Neon'},
+        {label: 'Ram_1500', value: 'Ram_1500'},
+        {label: 'Ram_2500', value: 'Ram_2500'},
+        {label: 'Ram_3500', value: 'Ram_3500'},
+        {label: 'Ram_5500', value: 'Ram_5500'},
+        
+
     ],
-    "Ferrari": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Fiat": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Fisker": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Fleetwood": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
+ 
     "Ford": [
         {label: 'Any', value: ''},
+        {label: 'Aerostar', value: 'Aerostar'},
+        {label: 'Aspire', value: 'Aspire'},
+        {label: 'Bounder', value: 'Bounder'},
+        {label: 'Bronco II', value: 'Bronco-II'},
         {label: 'Bronco Sport', value: 'Bronco_Sport'},
+        {label: 'Bronco', value: 'Bronco'},
+        {label: 'C-Max Hybrid', value: 'C-Max_Hybrid'},
         {label: 'C-Max', value: 'C-Max'},
+        {label: 'Commercial Chassis', value: 'Commercial_Chassis'},
         {label: 'Commercial Truck', value: 'Commercial_Truck'},
+        {label: 'Commercial Vans', value: 'Commercial_Vans'},
+        {label: 'Contour', value: 'Contour'},
+        {label: 'Crown Victoria', value: 'Crown_Victoria'},
         {label: 'E-Series', value: 'E-Series'},
         {label: 'EcoSport', value: 'EcoSport'},
         {label: 'Edge', value: 'Edge'},
+        {label: 'Escape Plug-In Hybrid', value: 'Escape-Plug-In_Hybrid'},
+        {label: 'Escape', value: 'Escape'},
+        {label: 'Escort', value: 'Escort'},
         {label: 'Excursion', value: 'Excursion'},
+        {label: 'Expedition EL', value: 'Expedition_EL'},
         {label: 'Expedition Max', value: 'Expedition_Max'},
         {label: 'Expedition', value: 'Expedition'},
         {label: 'Explorer Sport Trac', value: 'Explorer_Sport_Trac'},
+        {label: 'Explorer Sport', value: 'Explorer_Sport'},
         {label: 'Explorer', value: 'Explorer'},
         {label: 'F-150', value: 'F-150'},
         {label: 'F-250', value: 'F-250'},
         {label: 'F-350', value: 'F-350'},
         {label: 'F-450', value: 'F-450'},
         {label: 'F-550', value: 'F-550'},
+        {label: 'F-600 16 Box Truck', value: 'F-600_16_Box_Truck'},
+        {label: 'F-600', value: 'F-600'},
+        {label: 'F-650', value: 'F-650'},
+        {label: 'F-700', value: 'F-700'},
+        {label: 'F-750', value: 'F-750'},
+        {label: 'F-800', value: 'F-800'},
+        {label: 'F7000', value: 'F7000'},
         {label: 'Fiesta', value: 'Fiesta'},
         {label: 'Five Hundred', value: 'Five_Hundred'},
         {label: 'Flex', value: 'Flex'},
         {label: 'Focus', value: 'Focus'},
-        {label: 'Freestyle', value: 'Freestyle'},
+        {label: 'Freestar', value: 'Freestar'},
+        {label: 'Fusion Energi', value: 'Fusion_Energi'},
         {label: 'Fusion', value: 'Fusion'},
+        {label: 'GT', value: 'GT'},
+        {label: 'LCF', value: 'LCF'},
+        {label: 'Motorhome Chassis', value: 'Motorhome_Chassis'},
         {label: 'Mustang Mach-E', value: 'Mustang_Mach-E'},
         {label: 'Mustang', value: 'Mustang'},
+        {label: 'Probe', value: 'Probe'},
+        {label: 'Rambler', value: 'Rambler'},
         {label: 'Ranger', value: 'Ranger'},
         {label: 'Taurus X', value: 'Taurus_X'},
         {label: 'Taurus', value: 'Taurus'},
+        {label: 'Tempo', value: 'Tempo'},
+        {label: 'Think', value: 'Think'},
+        {label: 'Thunderbird', value: 'Thunderbird'},
         {label: 'Transit', value: 'Transit'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Freightliner": [
-        {label: 'Any', value: ''},
         {label: 'Windstar', value: 'Windstar'},
         {label: 'ZX2', value: 'ZX2'}
     ],
     "GMC": [
         {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
+        {label: '1500', value: '1500'},
+        {label: '2500', value: '2500'},
+        {label: '3500', value: '3500'},
+        {label: 'Acadia', value: 'Acadia'},
+        {label: 'Canyon', value: 'Canyon'},
+        {label: 'Envoy', value: 'Envoy'},
+        {label: 'Savana', value: 'Savana'},
+        {label: 'Terrain', value: 'Terrain'},
+        {label: 'Yukon_XL', value: 'Yukon_XL'},
+        {label: 'Yukon', value: 'Yukon'},
+
     ],
-    "Genesis": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Geo": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Honda": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
+
     "Hummer": [
         {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
+        {label: 'H2', value: 'H2'},
+        {label: 'H3', value: 'H3'}
     ],
-    "Hyundai": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Infiniti": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "International": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Isuzu": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
+
     "Jaquar": [
         {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
+        {label: 'E-PACE', value: 'E-PACE'},
+        {label: 'F-Type', value: 'F-Type'},
+        {label: 'I-PACE', value: 'I-PACE'},
+        {label: 'XE', value: 'XE'},
+        {label: 'XF', value: 'XF'},
+        {label: 'XJ', value: 'XJ'},
+
     ],
     "Jeep": [
         {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
+        {label: 'Compass', value: 'Compass'},
+        {label: 'Gladiator', value: 'Gladiator'},
+        {label: 'Grand Cherokee', value: 'Grand Cherokee'},
+        {label: 'Liberty', value: 'Liberty'},
+        {label: 'Patriot', value: 'Patriot'},
+        {label: 'Renegade', value: 'Renegade'},
+        {label: 'Wrangler', value: 'Wrangler'},
     ],
-    "KIA": [
+     "Lincoln": [
         {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
+        {label: 'Continental', value: 'Continental'},
+        {label: 'Corsair', value: 'Corsair'},
+        {label: 'LS', value: 'LS'},
+        {label: 'MKC', value: 'MKC'},
+        {label: 'MKS', value: 'MKS'},
+        {label: 'MKT', value: 'MKT'},
+        {label: 'MKX', value: 'MKX'},
+        {label: 'MKZ', value: 'MKZ'},
+        {label: 'Nautilus', value: 'Nautilus'},
+        {label: 'Navigator', value: 'Navigator'},
+        {label: 'Town_Car', value: 'Town_Car'},
+   
     ],
-    "Karma": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Lamborghini": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Land-Rover": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Lexus": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Lincoln": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Lotus": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Maserati": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
+
     "Mazda": [
         {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "McLaren": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
+        {label: 'B-Series', value: 'B-Series'},
+        {label: 'CX-30', value: 'CX-30'},
+        {label: 'CX-3', value: 'CX-3'},
+        {label: 'CX-5', value: 'CX-5'},
+        {label: 'CX-7', value: 'CX-7'},
+        {label: 'CX-9', value: 'CX-9'},
+        {label: 'MX-5_Miata', value: 'MX-5_Miata'},
+        {label: 'Mazda2', value: 'Mazda2'},
+        {label: 'Mazda3', value: 'Mazda3'},
+        {label: 'Mazda5', value: 'Mazda5'},
+        {label: 'Mazda6', value: 'Mazda6'},
+        {label: 'Mazdaspeed3', value: 'Mazdaspeed3'},
+        {label: 'Protege', value: 'Protege'},
+        {label: 'Tribute', value: 'Tribute'},
+
     ],
     "Mercedes-Benz": [
         {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
+        {label: '560', value: '560'},
+        {label: 'A-Class', value: 'A-Class'},
+        {label: 'AMG_A_35', value: 'AMG_A_35'},
+        {label: 'AMG_GLA_35', value: 'AMG_GLA_35'},
+        {label: 'AMG_GT', value: 'AMG_GT'},
+        {label: 'C-Class', value: 'C-Class'},
+        {label: 'CLA-Class', value: 'CLA-Class'},
+        {label: 'CLk-Class', value: 'CLk-Class'},
+        {label: 'CLS-Class', value: 'CLS-Class'},
+        {label: 'E-Class', value: 'E-Class'},
+        {label: 'G-Class', value: 'G-Class'},
+        {label: 'GL-Class', value: 'GL-Class'},
+        {label: 'GLA-Class', value: 'GLA-Class'},
+        {label: 'GLB-Class', value: 'GLB-Class'},
+        {label: 'GLC-Class', value: 'GLC-Class'},
+        {label: 'GLE-Class', value: 'GLE-Class'},
+        {label: 'GLK-Class', value: 'GLK-Class'},
+        {label: 'GLS-Class', value: 'GLS-Class'},
+        {label: 'M-Class', value: 'M-Class'},
+        {label: 'Metris', value: 'Metris'},
+        {label: 'R-Class', value: 'R-Class'},
+        {label: 'S-Class', value: 'S-Class'},
+        {label: 'SL-Class', value: 'SL-Class'},
+        {label: 'SLC-Class', value: 'SLC-Class'},
+        {label: 'Sprinter', value: 'Sprinter'},
     ],
-    "Mercury": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Mini": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Mitsubishi": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Mitsubishi-Fuso": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Nissan": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Oldsmobile": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Panoz": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Plymouth": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Pontiac": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
+
     "Porsche": [
         {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
+        {label: '718_Cayman', value: '718_Cayman'},
+        {label: '718_Spyder', value: '718_Spyder'},
+        {label: '718', value: '718'},
+        {label: '911', value: '911'},
+        {label: 'Boxter', value: 'Boxter'},
+        {label: 'Cayenne', value: 'Cayenne'},
+        {label: 'Cayenne_E-Hybrid_Coupe', value: 'Cayenne_E-Hybrid_Coupe'},
+        {label: 'Cayman', value: 'Cayman'},
+        {label: 'Macan', value: 'Macan'},
+        {label: 'Panamera', value: 'Panamera'},
+        {label: 'Taycan', value: 'Taycan'},
+
     ],
-    "RAM": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Rolls-Royce": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Saab": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Saturn": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Scion": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Shelby": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Smart": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Sterling": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Subaru": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Suzuki": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
+
     "Tesla": [
         {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
+        {label: 'Model_3', value: 'Model_3'},
+        {label: 'Model_S', value: 'Model_S'},
+        {label: 'Model_X', value: 'Model_X'},
     ],
     "Toyota": [
         {label: 'Any', value: ''},
@@ -462,23 +366,17 @@ export const models = {
         {label: 'Venza', value: 'Venza'},
         {label: 'Yaris', value: 'Yaris'}
     ],
-    "Volkswagen": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ],
-    "Volvo": [
-        {label: 'Any', value: ''},
-        {label: 'Windstar', value: 'Windstar'},
-        {label: 'ZX2', value: 'ZX2'}
-    ]
+
 };
+
+
 export const cities = [
     {label: 'Chicago', value: 'Chicago-IL'},
     {label: 'Denver', value: 'Denver-CO'},
     {label: 'Madison', value: 'Madison-WI'},
     {label: 'Minneapolis', value: 'Minneapolis-MN'},
     {label: 'Washington', value: 'Washington-DC'},
+
 ];
 export const miles = [
     {label: '+25 miles', value: '25'},
@@ -486,8 +384,5 @@ export const miles = [
     {label: '+75 miles', value: '75'},
     {label: '+100 miles', value: '100'},
     {label: '+150 miles', value: '150'},
-    {label: '+200 miles', value: '200'},
-    {label: '+250 miles', value: '250'},
-    {label: '+500 miles', value: '500'},
     {label: 'Unlimited', value: 'unlimited'}
 ];
