@@ -63,7 +63,7 @@ class Search extends Component {
     return (
       <Container>
 	      <Jumbotron 
-	      	title = "Carsoup Scraper"
+	      	title = "Search for Cars"
 	      	lead = "Search for and save interesting cars!"
 	      	fontawesome = "fas fa-search"
 	      />
