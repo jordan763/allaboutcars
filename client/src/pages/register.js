@@ -60,7 +60,7 @@ export default function Register() {
         <input
           id="register-password"
           type="password"
-          placeholder="Minimum 6 Character"
+          placeholder="Minimum of 6 Character"
           onChange={(e) => setPassword(e.target.value)}
         />
         <br></br>
