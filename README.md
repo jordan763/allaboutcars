@@ -13,7 +13,7 @@
 
 # Description
 
-*A quick and easy way to buy a car around you. If you have any questions, join the chat room for the all anwsers you need.
+*User Story: As a car enthusiast I want to connect with other like minded individuals that share my passion for cars and be able to  find cars for sale in my area
 
 # Usage_Information
 

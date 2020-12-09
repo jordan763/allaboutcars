@@ -61,7 +61,7 @@ class Search extends Component {
 
   render() {
     return (
-      <Container>
+      <Container >
 	      <Jumbotron 
 	      	title = "Search for Cars"
 	      	lead = "Search for and save interesting cars!"
