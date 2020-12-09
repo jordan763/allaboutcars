@@ -79,7 +79,7 @@ export default function Register() {
         />
         <br></br>
         <br></br>
-        <input class="btn" type="submit" value="Register" />
+        <input class="btn" type="submit" value="Sign Up" />
       </form>
     </div>
   );
