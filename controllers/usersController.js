@@ -13,7 +13,7 @@ module.exports = {
             if (password.length < 5)
             return res
                 .status(400)
-                .json({ msg: "The password needs to be at least 5 characters long." });
+                .json({ msg: "The password needs to be at least 6 characters long." });
             if (password !== passwordCheck)
             return res
                 .status(400)
